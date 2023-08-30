@@ -1,0 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  @apply bg-[url('../static/images/image.webp')] bg-no-repeat bg-cover bg-center h-screen
+}
