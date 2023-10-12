@@ -1,26 +1,26 @@
-# Notes App - Aplicación para Crear Notas
+# Notes App - Application to Create Notes
 
-La **Notes App** es una aplicación simple para crear y gestionar notas. Está diseñada con Next.js y utiliza Tailwind CSS para el diseño visual. Esta aplicación es de frontend solamente, lo que significa que no tiene un backend ni funcionalidad de persistencia de datos.
+The **Notes App** is a simple application for creating and managing notes. It is designed with Next.js and uses Tailwind CSS for visual design. This application is frontend only, meaning it does not have a backend or data persistence functionality.
 
-![Captura de Pantalla](src/static/images/cap.png)
+![Screenshot](src/static/images/cap.png)
 
-## Características
+## Characteristics
 
-- Crea nuevas notas fácilmente.
-- Edita el contenido de las notas existentes.
-- Elimina notas que ya no necesitas.
+- Create new notes easily.
+- Edit the content of existing notes.
+- Delete notes you no longer need.
 
-## Cómo Usar
+## How to use
 
-1. **Clona el Repositorio:**
+1. **Clone the Repository:**
    
-   ```bash
-   git clone https://github.com/jairayafranco/notes-app.git
-   cd notes-app
-   ```
+    ```bash
+    git clone https://github.com/jairayafranco/notes-app.git
+    cd notes-app
+    ```
 
-2. Instala las dependencias `npm install`
+2. Install dependencies `npm install`
 
-3. Inicia la aplicacion `npm run dev`
+3. Start the `npm run dev` application
 
-4. La aplicación se ejecutará en `http://localhost:3000`. Abre tu navegador y visita esta URL para ver la aplicación en funcionamiento.
+4. The application will run on `http://localhost:3000`. Open your browser and visit this URL to see the application working.
