@@ -6,7 +6,7 @@ import { useNoteContext } from "@/context/NoteContext";
 import { convertToBase64, getFormData } from "@/utils";
 
 export default function CreateOrEditNote() {
-    const { addOrEditNote, handleAddOrEditNote } = useNoteContext();
+    const { addOrEditNote, handleAddOrEditNote, addNote, updateNote } = useNoteContext();
     const [preview, setPreview] = useState<string | null>(null);
 
     const handleSubmit: React.FormEventHandler<HTMLFormElement> = (e) => {
@@ -15,12 +15,20 @@ export default function CreateOrEditNote() {
 
         const newNote = {
             id: addOrEditNote.note?.id || crypto.randomUUID(),
-            title: data.title,
-            description: data.description,
-            img: preview || addOrEditNote.note?.img || null,
-            userId: "1"
+            title: data.title as string,
+            description: data.description as string,
+            img: preview || addOrEditNote.note?.img || "",
+            userId: "1",
+            user: "Current User"
         };
-        console.log(newNote);
+
+        if (addOrEditNote.note) {
+            updateNote(newNote);
+        } else {
+            addNote(newNote);
+        }
+        handleAddOrEditNote({ open: false, note: null });
+        setPreview(null);
     }
 
     return (
