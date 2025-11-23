@@ -67,7 +67,7 @@ export const data = [
         title: "Tropical Paradise",
         description: "Immerse yourself in a tropical paradise with palm-fringed beaches and crystal-clear waters. Let the gentle waves lull you into a state of complete relaxation.",
         user: "tropicaldreamer",
-        img: "https://www.itprotoday.com/sites/itprotoday.com/files/styles/article_featured_retina/public/JavaScript-code.jpg?itok=1Wia7hH0"
+        img: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
     },
     {
         id: "11",
